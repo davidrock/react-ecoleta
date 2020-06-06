@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node src/index.ts",
-    "knex:mig": "knex migrate:latest --knexfile knexfile.ts migrate:latest"
+    "knex:mig": "knex migrate:latest --knexfile knexfile.ts migrate:latest",
+    "knex:seed": "knex migrate:latest --knexfile knexfile.ts seed:run"
   },
   "dependencies": {
     "express": "^4.17.1",
